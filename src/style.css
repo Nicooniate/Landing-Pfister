@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    /* background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526); */
+    background: #232526;
+    background: linear-gradient(to left, #414345, #232526);
+}
+
+.PfFixed {
+    position: sticky;
+    z-index: 9997;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.texlogo {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #141e3026;
+    background: -webkit-linear-gradient(to right, #243b5551, #141e305d);
+    background: linear-gradient(to right, #243b5550, #141e3057);
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+}
+
+.bodycontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+nav {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 9998;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.icono {
+    animation: moverIzq 0.5s ease-in;
+    z-index: 9999;
+}
+
+header {
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243B55, #141E30);
+    height: 700px;
+    padding: 48px;
+    width: 100%;
+    /* background: url('/images/51329182854_9fd7254821_h.jpg') no-repeat center center; */
+    /* background: url('/images/fondoHeader.png') no-repeat center center; */
+    background: url('/images/hfprmasq7zfe1.png') no-repeat center center;
+    background-size: cover;
+    padding: 100px;
+    /* Ajusta el espacio interno del nav */
+    align-items: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+    background-image: url(/images/pfister.wmv);
+}
+
+.container img {
+    display: block;
+    height: 350px;
+    object-fit: cover;
+    width: auto;
+    animation: moverArriba 0.5s ease-in;
+    /* margin-bottom: 200px;
+    margin-top: 100px; */
+}
+
+.textos {
+    width: 50%;
+    color: #ffffff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.textos h1 {
+    font-size: 80px;
+    animation: moverDerecha 0.5s ease-in;
+}
+
+.textos h2 {
+    font-weight: 100;
+    font-size: 20px;
+    animation: moverIzq 0.5s ease-in;
+}
+
+.textos a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: moverArriba 0.5s ease-in;
+}
+
+
+.wave {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to right, #243B55, #141E30);
+
+}
+
+.content1 {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+
+}
+
+.content2 video {
+    padding: 0 30px 0 0;
+}
+
+.text1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px 0 30px;
+    font-weight: 2px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Orbitron", sans-serif;
+}
+
+.video {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 30px;
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+
+.enlaces {
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: #050000f0;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease;
+    padding: 0 0 0 120px;
+}
+
+.uno {
+    clip-path: inset(0 100% 0 0)
+}
+
+.dos {
+    clip-path: inset(0 80% 0 0);
+}
+
+.containerAbout {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.022);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.containerAbout h1 {
+    text-align: center;
+    color: #f80000;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.containerAbout p {
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 20px;
+    font: 400 clamp(1.27rem, 1.16rem + 0.51vw, 1.78rem) / calc(2.125ex + 6px) "Porsche Next", "Arial Narrow", Arial, "Heiti SC", SimHei, sans-serif;
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+
+.locate h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+
+.locate-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 120px;
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.h2-models {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+/*
+    Estilos de las Cards de los autos
+*/
+
+.wrapper { /*Se aseguro que centrar las cards reiniciando parametros anteriores*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Contenedor de las cards */
+.containerModels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* 🔹 Centra las cards horizontalmente */
+    align-items: center;
+    /* 🔹 Asegura que se mantengan centradas verticalmente */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 200px;
+}
+
+/* Estilo de la card */
+.card {
+    width: calc(33.33% - 20px); /* 3 cards por fila con espacio entre ellas */
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    margin-right: 6px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Imagen con efecto zoom */
+.image-container {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .image-container img {
+    transform: scale(1.05);
+}
+
+/* Posición del título y combustible */
+.card-header {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.fuel-type {
+    display: block;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 88px;
+}
+
+/* Contenido de la card */
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body p {
+    font-weight: 700;
+}
+
+.card-body p strong {
+    font-weight: 400;
+}
+
+.card-body p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Botones */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    color: white;
+    background: #243B55;
+}
+
+.btn:hover {
+    background: #cc5200;
+}
+
+.btn-secondary {
+    background: #141E30;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #333;
+}
+
+/*
+    Estilos de las Modals (Ventanas emergentes)
+*/
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #243B55bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity 1.6s;
+    --transform: translateY(0);
+    --transition: transform .8s;
+}
+
+.modal_container{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 89%;
+    background-color: white;
+    border-radius: 6px;
+    padding: 3em 2.5em ;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.modal_title{
+    font-size: 2.5em;
+}
+
+.modal_p {
+    margin-bottom: 10px;
+    font-weight: 450;
+}
+.modal_img {
+    width: 90%;
+    max-width: 500px;
+}
+
+.modal_close{
+    text-decoration: none;
+    color: wheat;
+    background-color: #f26250;
+    padding: 1em 3em;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal_close:hover{
+    color: #f26250;
+    background-color: #fff;
+}
+
+/*
+Estilos del image Slide
+*/
+
+    .slider-wrapper{
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+    }
+
+    .slider {
+        display: flex;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+        border-radius: 0.5rem;
+        /**/
+        width: 100%;
+    }
+
+    .slider img{
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+        /**/
+        max-width: 100%;
+        height: auto;
+        display: block;
+        overflow: hidden;
+    }
+
+    .slider-nav{
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .slider-nav a{
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #ffffff;
+        opacity: 1;
+        transition: opacity ease 250ms;
+        box-shadow: 1px 2px 3px #010101;
+    }
+
+    .slider-nav a:hover{
+        background-color: #f26250;
+    }
+
+
+
+@keyframes moverIzq {
+    0% {
+        opacity: 0;
+        transform: translate(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha {
+    0% {
+        opacity: 0;
+        transform: translate(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverArriba {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 10%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+/* Hacer que las cards sean responsive */
+@media (max-width: 1024px) {
+    .card {
+        width: calc(50% - 20px);
+        /* 2 cards por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        /* 1 card por fila en pantallas pequeñas */
+    }
+}
