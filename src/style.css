@@ -75,7 +75,7 @@ header {
     width: 100%;
     /* background: url('/images/51329182854_9fd7254821_h.jpg') no-repeat center center; */
     /* background: url('/images/fondoHeader.png') no-repeat center center; */
-    background: url('/images/hfprmasq7zfe1.png') no-repeat center center;
+    background: url('../images/hfprmasq7zfe1.png') no-repeat center center;
     background-size: cover;
     padding: 100px;
     /* Ajusta el espacio interno del nav */
@@ -89,7 +89,6 @@ header {
     align-items: center;
     margin: auto;
     justify-content: space-around;
-    background-image: url(/images/pfister.wmv);
 }
 
 .container img {
