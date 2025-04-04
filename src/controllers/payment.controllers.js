@@ -22,7 +22,7 @@ export const createSessionComet = async (req, res) => {
             ],
             mode: 'payment',
             success_url: 'https://nicooniate.github.io/Landing-Pfister/',
-            cancel_url: 'http://localhost:3000/cancel',
+            cancel_url: 'https://nicooniate.github.io/Landing-Pfister/src/HTML/models.html',
         });
         return res.json(session)
 }
@@ -45,7 +45,7 @@ export const createSessionComets2 = async (req, res) => {
             ],
             mode: 'payment',
             success_url: 'https://nicooniate.github.io/Landing-Pfister/',
-            cancel_url: 'http://localhost:3000/cancel',
+            cancel_url: 'https://nicooniate.github.io/Landing-Pfister/src/HTML/models.html',
         });
         return res.json(session)
 }
@@ -68,7 +68,7 @@ export const createSessionComets2C = async (req, res) => {
             ],
             mode: 'payment',
             success_url: 'https://nicooniate.github.io/Landing-Pfister/',
-            cancel_url: 'http://localhost:3000/cancel',
+            cancel_url: 'https://nicooniate.github.io/Landing-Pfister/src/HTML/models.html',
         });
         return res.json(session)
 }
@@ -91,7 +91,7 @@ export const createSessionAstron = async (req, res) => {
         ],
         mode: 'payment',
         success_url: 'https://nicooniate.github.io/Landing-Pfister/',
-        cancel_url: 'http://localhost:3000/cancel',
+        cancel_url: 'https://nicooniate.github.io/Landing-Pfister/src/HTML/models.html',
     });
     return res.json(session)
 }
@@ -114,7 +114,7 @@ export const createSessionNeon = async (req, res) => {
         ],
         mode: 'payment',
         success_url: 'https://nicooniate.github.io/Landing-Pfister/',
-        cancel_url: 'http://localhost:3000/cancel',
+        cancel_url: 'https://nicooniate.github.io/Landing-Pfister/src/HTML/models.html',
     });
     return res.json(session)
 }
@@ -137,7 +137,7 @@ export const createSessionCometSR = async (req, res) => {
         ],
         mode: 'payment',
         success_url: 'https://nicooniate.github.io/Landing-Pfister/',
-        cancel_url: 'http://localhost:3000/cancel',
+        cancel_url: 'https://nicooniate.github.io/Landing-Pfister/src/HTML/models.html',
     });
     return res.json(session)
 }

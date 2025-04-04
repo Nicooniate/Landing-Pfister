@@ -1,4 +1,5 @@
 
+
 # Pfiter Landing Page
 
 Landing Pfister es una Landing Page interactiva que permite a los usuarios explorar modelos de autos y realizar una simulación de compra a través de Stripe.
@@ -27,3 +28,4 @@ Si tienes sugerencias o feedback, ¡será bien recibido! Puedes contactarme en [
 
 📌 Gmail: nicooniate02@gmail.com
 
+>>>>>>> ff42ced4ed06b7743f276649c21a0863dd25bec6
