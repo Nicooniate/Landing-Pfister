@@ -577,6 +577,12 @@ Estilos del image Slide
     backdrop-filter: blur(4px);
 }
 
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .loader-circle {
     width: 60px;
     height: 60px;
@@ -591,11 +597,6 @@ Estilos del image Slide
     display: none;
 }
 
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 @keyframes pulse {
 
