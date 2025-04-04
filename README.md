@@ -28,4 +28,3 @@ Si tienes sugerencias o feedback, ¡será bien recibido! Puedes contactarme en [
 
 📌 Gmail: nicooniate02@gmail.com
 
->>>>>>> ff42ced4ed06b7743f276649c21a0863dd25bec6
