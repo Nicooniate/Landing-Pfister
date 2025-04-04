@@ -305,7 +305,8 @@ header {
     Estilos de las Cards de los autos
 */
 
-.wrapper { /*Se aseguro que centrar las cards reiniciando parametros anteriores*/
+.wrapper {
+    /*Se aseguro que centrar las cards reiniciando parametros anteriores*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,7 +329,8 @@ header {
 
 /* Estilo de la card */
 .card {
-    width: calc(33.33% - 20px); /* 3 cards por fila con espacio entre ellas */
+    width: calc(33.33% - 20px);
+    /* 3 cards por fila con espacio entre ellas */
     border-radius: 15px;
     overflow: hidden;
     background: white;
@@ -433,7 +435,7 @@ header {
     Estilos de las Modals (Ventanas emergentes)
 */
 
-.modal{
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -448,7 +450,7 @@ header {
     --transition: transform .8s;
 }
 
-.modal--show{
+.modal--show {
     opacity: 1;
     pointer-events: unset;
     transition: opacity 1.6s;
@@ -456,14 +458,14 @@ header {
     --transition: transform .8s;
 }
 
-.modal_container{
+.modal_container {
     margin: auto;
     width: 90%;
     max-width: 600px;
     max-height: 89%;
     background-color: white;
     border-radius: 6px;
-    padding: 3em 2.5em ;
+    padding: 3em 2.5em;
     display: grid;
     gap: 1em;
     place-items: center;
@@ -472,7 +474,7 @@ header {
     transition: var(--transition);
 }
 
-.modal_title{
+.modal_title {
     font-size: 2.5em;
 }
 
@@ -480,12 +482,13 @@ header {
     margin-bottom: 10px;
     font-weight: 450;
 }
+
 .modal_img {
     width: 90%;
     max-width: 500px;
 }
 
-.modal_close{
+.modal_close {
     text-decoration: none;
     color: wheat;
     background-color: #f26250;
@@ -497,7 +500,7 @@ header {
     transition: background-color .3s;
 }
 
-.modal_close:hover{
+.modal_close:hover {
     color: #f26250;
     background-color: #fff;
 }
@@ -506,82 +509,108 @@ header {
 Estilos del image Slide
 */
 
-    .slider-wrapper{
-        position: relative;
-        max-width: 48rem;
-        margin: 0 auto;
-    }
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
 
-    .slider {
-        display: flex;
-        aspect-ratio: 16/9;
-        overflow: hidden;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-        border-radius: 0.5rem;
-        /**/
-        width: 100%;
-    }
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    /**/
+    width: 100%;
+}
 
-    .slider img{
-        flex: 1 0 100%;
-        scroll-snap-align: start;
-        object-fit: cover;
-        /**/
-        max-width: 100%;
-        height: auto;
-        display: block;
-        overflow: hidden;
-    }
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    /**/
+    max-width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
 
-    .slider-nav{
-        display: flex;
-        column-gap: 1rem;
-        position: absolute;
-        bottom: 1.25rem;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-    }
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
 
-    .slider-nav a{
-        width: 0.5rem;
-        height: 0.5rem;
-        border-radius: 50%;
-        background-color: #ffffff;
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 1;
+    transition: opacity ease 250ms;
+    box-shadow: 1px 2px 3px #010101;
+}
+
+.slider-nav a:hover {
+    background-color: #f26250;
+}
+
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    /* fondo claro y suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(4px);
+}
+
+.loader-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 6px solid #ccc;
+    border-top: 6px solid #1a1a1a;
+    animation: spin 1s linear infinite, pulse 1.5s ease-in-out infinite;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
         opacity: 1;
-        transition: opacity ease 250ms;
-        box-shadow: 1px 2px 3px #010101;
     }
 
-    .slider-nav a:hover{
-        background-color: #f26250;
+    50% {
+        transform: scale(1.05);
+        opacity: 0.7;
     }
+}
 
-    .spinner {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        width: 50px;
-        height: 50px;
-        border: 5px solid rgba(0, 0, 0, 0.1);
-        border-top-color: #000;
-        border-radius: 50%;
-        animation: spin 1s ease-in-out infinite;
-        transform: translate(-50%, -50%);
-        z-index: 9999;
-    }
-    
-    @keyframes spin {
-        to {
-        transform: translate(-50%, -50%) rotate(360deg);
-        }
-    }
-    
-    .hidden {
-        display: none;
-    }
 
 
 @keyframes moverIzq {
