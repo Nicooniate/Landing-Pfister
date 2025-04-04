@@ -5,11 +5,13 @@ import path from 'path'
 import cors from "cors";
 
 
+
+const app = express(); // inicio express
+
 app.use(cors({
     origin: "https://nicooniate.github.io" // Para que Render tenga CORS habilitado para aceptar peticiones desde GitHub Pages.
 }));
 
-const app = express(); // inicio express
 
 app.use(express.json()); // La app por defecto lee Json
 
