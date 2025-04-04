@@ -2,6 +2,11 @@ import express from "express"; //importo express
 import paymentRoutes from "../routes/payments.routes.js"; // Importo la las rutas de pago desde mi archivo payments.router.js
 import { PORT } from "./config.js";
 import path from 'path'
+import cors from "cors";
+
+
+
+app.use(cors()); // Para que Render tenga CORS habilitado para aceptar peticiones desde GitHub Pages.
 
 const app = express(); // inicio express
 
